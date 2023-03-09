@@ -1,5 +1,5 @@
 {
-    "name": "monsieurbiz/sylius-menu-plugin",
+    "name": "morsibouhlel/sylius-menu-plugin",
     "type": "sylius-plugin",
     "keywords": ["sylius", "sylius-plugin", "monsieurbiz"],
     "description": "This plugins allows you to manage menus.",
