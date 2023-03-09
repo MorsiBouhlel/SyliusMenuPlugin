@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<resources xmlns="https://api-platform.com/schema/metadata"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://api-platform.com/schema/metadata
+           https://api-platform.com/schema/metadata/metadata-2.0.xsd"
+>
+    <resource class="MonsieurBiz\SyliusMenuPlugin\Entity\MenuItemTranslation" shortName="MenuItemTranslation">
+        <attribute name="validation_groups">sylius</attribute>
+
+        <collectionOperations>
+            <collectionOperation name="get_menus_items">
+                <attribute name="method">GET</attribute>
+                <attribute name="path">/shop/menu/items</attribute>
+            </collectionOperation>
+        </collectionOperations>
+
+        <property name="label"  writable="false" />
+        <property name="items" required="false">
+            <attribute name="id">string</attribute>
+            <attribute name="label">string</attribute>
+        </property>
+    </resource>
+</resources>
