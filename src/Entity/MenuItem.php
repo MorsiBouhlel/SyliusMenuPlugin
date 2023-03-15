@@ -41,7 +41,9 @@ class MenuItem implements MenuItemInterface
     protected ?MenuItemInterface $parent = null;
 
     protected ?int $position = null;
-
+    
+    protected ?string $style = null;
+    
     /**
      * MenuItem constructor.
      */
@@ -173,7 +175,23 @@ class MenuItem implements MenuItemInterface
     {
         return $this->getTranslation()->getUrl();
     }
+    
+     /**
+     * @inheritdoc
+     */
+    public function getStyle(): ?string
+    {
+        return $this->style;
+    }
 
+    /**
+     * @inheritdoc
+     */
+    public function setStyle($style): void
+    {
+        $this->style = $style;
+    }
+    
     /**
      * @inheritdoc
      */
