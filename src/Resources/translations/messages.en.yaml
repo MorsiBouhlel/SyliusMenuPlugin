@@ -13,3 +13,4 @@ monsieurbiz_menu:
         menu_items: 'Menu elements'
         label: 'Label'
         url: 'URL'
+        style: 'Style'
