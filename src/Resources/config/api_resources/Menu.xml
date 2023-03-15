@@ -21,7 +21,7 @@
         <itemOperations>
             <itemOperation name="shop_get">
                 <attribute name="method">GET</attribute>
-                <attribute name="path">/shop/menus/{id}</attribute>
+                <attribute name="path">/shop/menus/{code}</attribute>
                 <attribute name="normalization_context">
                     <attribute name="groups">shop:menu:read</attribute>
                 </attribute>
