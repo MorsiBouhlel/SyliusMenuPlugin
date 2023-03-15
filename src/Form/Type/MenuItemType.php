@@ -55,6 +55,9 @@ final class MenuItemType extends AbstractResourceType
                             return $qb;
                         },
                     ])
+                    ->add('style', TextType::class, [
+                        'label' => 'monsieurbiz_menu.ui.style'
+                    ])
                     ->add('translations', ResourceTranslationsType::class, [
                         'label' => 'sylius.ui.translations',
                         'entry_type' => MenuItemTranslationType::class,
