@@ -56,7 +56,8 @@ final class MenuItemType extends AbstractResourceType
                         },
                     ])
                     ->add('style', TextType::class, [
-                        'label' => 'monsieurbiz_menu.ui.style'
+                        'label' => 'monsieurbiz_menu.ui.style',
+                        'required' => false
                     ])
                     ->add('translations', ResourceTranslationsType::class, [
                         'label' => 'sylius.ui.translations',
