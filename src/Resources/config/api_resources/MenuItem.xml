@@ -29,6 +29,7 @@
         <property name="items" required="false">
             <attribute name="id">string</attribute>
             <attribute name="label">string</attribute>
+            <attribute name="style">string</attribute>
         </property>
     </resource>
 </resources>
