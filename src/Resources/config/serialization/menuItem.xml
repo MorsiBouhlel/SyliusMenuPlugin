@@ -11,6 +11,9 @@
         <attribute name="label">
             <group>shop:menu:read</group>
         </attribute>
+        <attribute name="style">
+            <group>shop:menu:read</group>
+        </attribute>
         <attribute name="translation">
             <group>shop:menu:read</group>
         </attribute>
