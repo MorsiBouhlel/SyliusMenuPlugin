@@ -28,7 +28,8 @@
             </itemOperation>
         </itemOperations>
 
-        <property name="code"  writable="false" />
+        <property name="id" identifier="false" writable="false" />
+        <property name="code" identifier="true" required="true" />
         <property name="firstLevelItems"  writable="false" />
     </resource>
 </resources>
