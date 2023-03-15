@@ -28,5 +28,8 @@
         <field name="position" column="position" type="integer" nullable="false">
             <options name="default">null</options>
         </field>
+        <field name="style" column="style" type="string" nullable="true">
+            <options name="default">null</options>
+        </field>
     </mapped-superclass>
 </doctrine-mapping>
