@@ -22,7 +22,7 @@ use Sylius\Component\Resource\Model\TranslatableTrait;
 /**
  * @method MenuItemTranslationInterface getTranslation(?string $locale = null)
  */
-class MenuItem implements MenuItemInterface
+class MenuItem implements MenuItemInterface, ImagesAwareInterface
 {
     use TimestampableTrait;
 
