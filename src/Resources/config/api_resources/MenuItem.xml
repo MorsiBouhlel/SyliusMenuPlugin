@@ -26,6 +26,7 @@
         </itemOperations>
 
         <property name="label"  writable="false" />
+        <property name="images" writable="false"/>       
         <property name="items" required="false">
             <attribute name="id">string</attribute>
             <attribute name="label">string</attribute>
