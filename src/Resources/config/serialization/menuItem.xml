@@ -20,5 +20,8 @@
         <attribute name="items">
             <group>shop:menu:read</group>
         </attribute>
+        <attribute name="images">
+            <group>shop:menu:read</group>
+        </attribute>        
     </class>
 </serializer>
