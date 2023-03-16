@@ -8,5 +8,8 @@ use Sylius\Component\Core\Model\Image;
 
 class MenuItemImage extends Image
 {
-  
+ public function getFullPath(): ?string
+   {
+       return '/media/image/'.$this->path;
+   } 
 }
