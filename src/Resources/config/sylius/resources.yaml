@@ -15,3 +15,7 @@ sylius_resource:
                 classes:
                     model: MonsieurBiz\SyliusMenuPlugin\Entity\MenuItemTranslation
                     form: MonsieurBiz\SyliusMenuPlugin\Form\Type\MenuItemTranslationType
+        monsieurbiz_menu.menu_item_image:
+            classes:
+                model: MonsieurBiz\SyliusMenuPlugin\Entity\MenuItemImage
+                form: MonsieurBiz\SyliusMenuPlugin\Form\Type\MenuItemImageType        
