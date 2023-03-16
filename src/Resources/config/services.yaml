@@ -57,3 +57,23 @@ services:
         arguments:
             - '%monsieurbiz_menu.model.menu_item_translation.class%'
             - '%monsieurbiz_menu.form.type.menu_item_translation.validation_groups%'
+
+    MonsieurBiz\SyliusMenuPlugin\Form\Type\MenuItemImageType:
+        arguments:
+            - '%monsieurbiz_menu.model.menu_item_image.class%'
+        tags:
+            - { name: 'form.type'}
+    
+    MonsieurBiz\SyliusMenuPlugin\Form\Extension\MenuItemTypeExtension:
+        tags:
+            - { name: form.type_extension, extended_type: MonsieurBiz\SyliusMenuPlugin\Form\Type\MenuItemType }
+
+    monsieurbiz.listener.images_upload:
+        class: Sylius\Bundle\CoreBundle\EventListener\ImagesUploadListener
+        parent: sylius.listener.images_upload
+        autowire: true
+        autoconfigure: false
+        public: false
+        tags:
+            - { name: kernel.event_listener, event: monsieurbiz_menu.menu_item.pre_create, method: uploadImages }
+            - { name: kernel.event_listener, event: monsieurbiz_menu.menu_item.pre_update, method: uploadImages }
