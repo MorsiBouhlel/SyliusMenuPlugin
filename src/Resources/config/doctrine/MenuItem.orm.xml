@@ -31,5 +31,11 @@
         <field name="style" column="style" type="string" nullable="true">
             <options name="default">null</options>
         </field>
+        <one-to-many field="images" target-entity="MonsieurBiz\SyliusMenuPlugin\Entity\MenuItemImage" mapped-by="owner" orphan-removal="true">
+            <options name="default">null</options>
+            <cascade>
+                <cascade-all/>
+            </cascade>
+        </one-to-many>
     </mapped-superclass>
 </doctrine-mapping>
