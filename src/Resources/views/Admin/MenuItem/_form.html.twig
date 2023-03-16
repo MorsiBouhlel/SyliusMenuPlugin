@@ -6,6 +6,7 @@
     <div class="field">
         {{ form_row(form.parent) }}
         {{ form_row(form.style) }}
+        {% include '@MonsieurBizSyliusMenuPlugin/Admin/MenuItem/_media.html.twig' %}
         {{ translationForm(form.translations) }}
     </div>
 </div>
