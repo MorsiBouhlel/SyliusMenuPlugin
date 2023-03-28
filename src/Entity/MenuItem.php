@@ -55,7 +55,11 @@ class MenuItem implements MenuItemInterface, ImagesAwareInterface
     
     public function getImagePath() :string
     {
+        if (isset($this->images[0])){
         return $this->images[0]->getFullPath();
+        }else {
+            return '';
+        }
     }
     
     /**
