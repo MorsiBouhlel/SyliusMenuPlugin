@@ -46,10 +46,17 @@ class MenuItem implements MenuItemInterface, ImagesAwareInterface
     
     protected ?string $style = null;
     
+    protected ?string $imagePath = null;
+    
     /**
      * @var Collection|ImageInterface
      */
     protected $images;
+    
+    public function getImagePath() :string
+    {
+        return $this->images[0]->getFullPath();
+    }
     
     /**
      * MenuItem constructor.
