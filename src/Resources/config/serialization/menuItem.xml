@@ -22,6 +22,9 @@
         </attribute>
         <attribute name="images">
             <group>shop:menu:read</group>
+        </attribute>
+        <attribute name="imagePath">
+            <group>shop:menu:read</group>
         </attribute>        
     </class>
 </serializer>
