@@ -4,7 +4,11 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://symfony.com/schema/dic/serializer-mapping https://symfony.com/schema/dic/serializer-mapping/serializer-mapping-1.0.xsd"
 >
+
     <class name="MonsieurBiz\SyliusMenuPlugin\Entity\MenuItemImage">
+        <attribute name="type">
+            <group>shop:menu:read</group>
+        </attribute>
         <attribute name="fullPath">
             <group>shop:menu:read</group>
         </attribute>

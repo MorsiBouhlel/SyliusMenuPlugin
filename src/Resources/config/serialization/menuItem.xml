@@ -20,7 +20,7 @@
         <attribute name="items">
             <group>shop:menu:read</group>
         </attribute>
-        <attribute name="imagePath">
+        <attribute name="images">
             <group>shop:menu:read</group>
         </attribute>
         <attribute name="position">

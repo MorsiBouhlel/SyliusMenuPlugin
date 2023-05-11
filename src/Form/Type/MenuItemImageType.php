@@ -9,7 +9,8 @@ use Sylius\Bundle\CoreBundle\Form\Type\ImageType;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\FormBuilderInterface;
 final class MenuItemImageType extends ImageType
 {
     /**
@@ -19,7 +20,19 @@ final class MenuItemImageType extends ImageType
     {
         return 'monsieurbiz_menu_menu_item_image';
     }
+    public function buildForm(FormBuilderInterface $builder, array $options): void
+    {
+        parent::buildForm($builder, $options);
 
+        $builder->add('type', ChoiceType::class, [
+            'label' => 'Type',
+            'multiple'=>false,
+            'choices' => [
+                'Mobile' => 'Mobile',
+                'Desktop' => 'Desktop',
+            ],
+        ]);
+    }
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
         parent::buildView($view, $form, $options);
