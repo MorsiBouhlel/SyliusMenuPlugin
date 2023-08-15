@@ -47,6 +47,8 @@ class MenuItem implements MenuItemInterface, ImagesAwareInterface
     protected ?string $style = null;
     
     protected ?string $imagePath = null;
+
+    protected ?string $code = null;
     
     /**
      * @var Collection|ImageInterface
@@ -271,5 +273,21 @@ class MenuItem implements MenuItemInterface, ImagesAwareInterface
             $image->setOwner(null);
             $this->images->removeElement($image);
         }
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getCode(): ?string
+    {
+        return $this->code;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function setCode(?string $code): void
+    {
+        $this->code = $code;
     }
 }
