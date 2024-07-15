@@ -77,3 +77,13 @@ services:
         tags:
             - { name: kernel.event_listener, event: monsieurbiz_menu.menu_item.pre_create, method: uploadImages }
             - { name: kernel.event_listener, event: monsieurbiz_menu.menu_item.pre_update, method: uploadImages }
+                
+    is_system.boolean_filter:
+        parent: 'api_platform.doctrine.orm.boolean_filter'
+        arguments: [ { isSystem: ~ } ]
+        tags: [ 'api_platform.filter' ]
+        # The following are mandatory only if a _defaults section is defined with inverted values.
+        # You may want to isolate filters in a dedicated file to avoid adding the following lines (by adding them in the defaults section)
+        autowire: false
+        autoconfigure: false
+        public: false            

@@ -12,6 +12,9 @@
             <collectionOperation name="shop_get">
                 <attribute name="method">GET</attribute>
                 <attribute name="path">/shop/menus</attribute>
+                <attribute name="filters">
+                    <attribute>is_system.boolean_filter</attribute>
+                </attribute>
                 <attribute name="normalization_context">
                     <attribute name="groups">shop:menu:read</attribute>
                 </attribute>
